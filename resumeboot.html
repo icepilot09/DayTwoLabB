@@ -2,13 +2,33 @@
 <html>
   <head>
 	<title>Resume</title>
-	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
   </head>
   <body>
-	<div class="masterContainer">
-	  <header class="navbar">
-		<nav>
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+	  <!--<header class="navbar">
+		<!--<nav>
 		  <ul>
 			<li><a href="#about">About</a></li>
 			<li><a href="#skills">Skills</a></li>
@@ -17,13 +37,12 @@
 			<li><a href="#contact">Contact</a></li>						
 		  </ul>
 		</nav>
-	  </header>
+	  </header> -->
 	  <div class="space"></div>
-	  <div class="content">
-		<div class="about">   
-		  <div class="myName">
-		    <h1>Michael McDonald</h1>
-		    <h3>Front End Engineer</h3>
+	  <div class="row">
+		<div class="col-md-12">   
+		    <h1 class="text-center">Michael McDonald</h1>
+		    <h3 class="text-center">Front End Engineer</h3>
 		  </div>
 		  <a name = "about"><h2>About Me</h2>
 		  <div class="row">
@@ -37,14 +56,14 @@
 		</div>
 		<div class="mySkills">		
 		  <a name = "skills"><h2>Technical Skills</h2>
-		  <div class="content-block">
-			<ul class="leftColumn">
+		  <div class="row">
+			<ul class="Col-xs-12 col-md-6">
 			  <li>HTML, CSS, Javascript</li>
 			  <li>Bootstrap, JQuery, LESS</li>
 			  <li>Git, NPM, APIs, REST</li>
 			  <li>Typescript, NodeJS/Express</li>
 			</ul>
-			<ul class="rightColumn">
+			<ul class="Col-xs-12 col-md-6">
 			  <li>NoSQL, SQL Databases</li>
 			  <li>Angular, PlatypusTS, PlatypusUI</li>
 			  <li>Mobile Design, Cordova</li>
